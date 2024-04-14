@@ -89,9 +89,9 @@ This is the place for you to write reflections:
 
 2. Dalam Rust, fitur lazy_static memungkinkan pembuatan variabel yang berperan sebagai singleton, artinya hanya ada satu instansi dari variabel tersebut dalam program. Ini berbeda dengan Java, di mana variabel static dapat diubah nilainya. Dengan menggunakan lazy_static, variabel tersebut diinisialisasi hanya sekali dan tetap immutable sepanjang program berjalan, mengamankan thread saat melakukan multi threading.
 
-
-
-
-
-
 #### Reflection Subscriber-2
+1. Saya sudah eksplore hal diluar steps tutorial, salah satunya src/lib.rs yang merupakan file utama dalam proyek Rust yang digunakan untuk mendefinisikan modul dan fungsi-fungsi yang dapat diakses secara luas. Ini adalah titik awal eksekusi ketika proyek digunakan sebagai library.
+
+2. Penggunaan pola Observer mempermudah penambahan pelanggan tanpa mengubah kelas subjek. Setiap pelanggan dapat mendaftar secara independen untuk menerima pemberitahuan. Namun, menambahkan lebih dari satu instance dari aplikasi utama mungkin memerlukan pertimbangan tambahan dan penanganan yang lebih kompleks.
+
+3. Menurut pendapat saya, fitur-fitur tersebut sangat bermanfaat. Dengan melakukan pengujian atau menggunakan koleksi Postman, kita dapat memvalidasi keakuratan program kita. Koleksi Postman juga memfasilitasi proses verifikasi apakah program memberikan respons dan beroperasi sesuai yang diharapkan dengan menggunakan data asli dari aplikasinya.
